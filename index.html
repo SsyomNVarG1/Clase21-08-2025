@@ -2,27 +2,19 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Demo Generación Procedimental</title>
+  <title>Generación Procedimental - Contraseña</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>🎮 Ejemplos de Generación Procedimental</header>
-  
-  <nav>
-    <button onclick="mostrar('./crear_niveles/index.html')">Mapa Simple</button>
-    <button onclick="mostrar('./cueva_procedural_abierto/index.html')">Cueva Rogue Like</button>
-    <button onclick="mostrar('./laberinto_procedural/index.html')">Laberinto 2D</button>
-    <button onclick="mostrar('./contrasena/index.html')">Generador de Claves</button>
-  </nav>
-
-  <div class="content">
-    <iframe id="ventana" src="laberinto.html"></iframe>
+    <div id="password" class="tab">
+      <div class="generator">
+        <h2>Generador de Contraseñas</h2>
+        <p>Ejemplo de generación procedimental aplicada a la seguridad.</p>
+        <button onclick="generatePassword()">Generar Contraseña</button>
+        <div class="password" id="passwordBox">Tu contraseña aparecerá aquí</div>
+      </div>
+    </div>
   </div>
-
-  <script>
-    function mostrar(pagina) {
-      document.getElementById("ventana").src = pagina;
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
