@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Generación Procedimental</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>🎮 Ejemplos de Generación Procedimental</header>
+  
+  <nav>
+    <button onclick="mostrar('./crear_niveles/index.html')">Mapa Simple</button>
+    <button onclick="mostrar('./cueva_procedural_abierto/index.html')">Cueva Rogue Like</button>
+    <button onclick="mostrar('./laberinto_procedural/index.html')">Laberinto 2D</button>
+    <button onclick="mostrar('./contrasena/index.html')">Generador de Claves</button>
+  </nav>
+
+  <div class="content">
+    <iframe id="ventana" src="laberinto.html"></iframe>
+  </div>
+
+  <script>
+    function mostrar(pagina) {
+      document.getElementById("ventana").src = pagina;
+    }
+  </script>
+</body>
+</html>
