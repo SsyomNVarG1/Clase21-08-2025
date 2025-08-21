@@ -1,0 +1,42 @@
+body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+.generator {
+      background: #1c2541;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .generator button {
+      background: #5bc0be;
+      border: none;
+      color: #fff;
+      padding: 0.8rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .generator button:hover {
+      background: #3a506b;
+    }
+
+    .password {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background: #0b132b;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #5bc0be;
+      word-wrap: break-word;
+    }

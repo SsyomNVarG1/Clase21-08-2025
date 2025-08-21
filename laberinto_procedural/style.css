@@ -1,0 +1,19 @@
+body{
+  background: #222; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+canvas{
+  border: 2px solid white;
+  background: black;
+  max-width: 79%;
+  object-fit: contain;
+}
+
+.scaled{
+  transform: scale(0.8);
+  transform-origin: top left;
+  }

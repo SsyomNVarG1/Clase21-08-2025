@@ -1,42 +1,66 @@
 body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: #f0f0f0;
-      margin: 0;
-      padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1a1f2b, #2c3e50);
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background: #1e2a38;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4da6ff;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background: #2a3d54;
+  padding: 0.8rem;
+}
+
+nav button {
+  background: #4da6ff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+nav button:hover {
+  background: #1f78d1;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1b2735;
+  padding: 1rem;
     }
 
-.generator {
-      background: #1c2541;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      max-width: 600px;
-      margin: 0 auto;
-    }
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #4da6ff;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    background: #111;
+}
 
-    .generator button {
-      background: #5bc0be;
-      border: none;
-      color: #fff;
-      padding: 0.8rem 1.2rem;
-      font-size: 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .generator button:hover {
-      background: #3a506b;
-    }
-
-    .password {
-      margin-top: 1.5rem;
-      padding: 1rem;
-      background: #0b132b;
-      border-radius: 5px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #5bc0be;
-      word-wrap: break-word;
-    }
+iframe::-webkit-scrollbar {
+  display: none;
+}
